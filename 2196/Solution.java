@@ -18,7 +18,7 @@
 class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
         HashMap<Integer,TreeNode> hashMap= new HashMap<>();
-        ArrayList<Integer> children = new ArrayList<>();
+        HashSet<Integer> children = new HashSet<>();
 
         for(int [] desc: descriptions){
             int parentValue = desc[0];
